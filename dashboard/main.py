@@ -8,7 +8,8 @@ st.title("TokenWise — Real-Time Wallet Intelligence on Solana")
 #Connect to the SQLite DB 
 @st.cache_resource
 def get_connection():
-    return sqlite3.connect("../backend/tokenwise.db")
+    db_path = os.path.join(os.path.dirname(__file__), "..", "backend", "tokenwise.db")
+    return sqlite3.connect(db_path, check_same_thread=False)
 
 #Load data from DB 
 @st.cache_data(ttl=120)  #cache for every 2 mins
