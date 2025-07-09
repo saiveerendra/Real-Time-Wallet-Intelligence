@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import sqlite3
-
+import os
 st.set_page_config(layout="wide")
 st.title("TokenWise — Real-Time Wallet Intelligence on Solana")
 
