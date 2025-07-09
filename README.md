@@ -115,7 +115,7 @@ Access the dashboard at http:localhost:8501/
 ##  Dashboard Results
 
 ### 1. Buy vs Sell Overview
-![Buy vs Sell Chart](https://via.placeholder.com/800x400.png?text=Buy+vs+Sell+Overview+Chart)
+![Buy vs Sell Chart](../images/1.png)
 
 > This bar chart shows the distribution of Buy and Sell transactions from tracked wallets. It provides a quick sense of the market sentiment over time.
 
