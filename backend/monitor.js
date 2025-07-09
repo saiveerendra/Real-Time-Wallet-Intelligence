@@ -1,7 +1,6 @@
 require("dotenv").config();
 const fs=require("fs");
 const path=require("path")
-// const csvPath=path.join(__dirname,"../dashboard/data.csv")
 const axios = require("axios");
 const {db,wallet_db}=require("./database");
 const getTopWallet=require("./getTopWallets");
@@ -96,17 +95,6 @@ function sleep(ms) {
 }
 
 
-// function logToCsv(data) {
-//   const exists = fs.existsSync(csvPath);
-//   const line = `"${data.Time}",${data.wallet},${data.amount},${data.action},${data.protocol}\n`;
-
-//   if (!exists) {
-//     fs.writeFileSync(csvPath, "timestamp,wallet,amount,action,protocol\n");
-//   }
-
-//   fs.appendFileSync(csvPath, line);
-// }
-
 function isValidSolanaAddress(address) {
   return /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(address);
 }
@@ -138,7 +126,6 @@ async function monitorWallets() {
         timeWithDate=parts[0]+parts[1];
         console.log(timeWithDate);
         const txData = { Time: timeWithDate, wallet, amount, action: direction, protocol };
-        // logToCsv(txData);
         logToDb(txData);
       }
     });
