@@ -153,10 +153,10 @@ async function  getData()
    await monitorWallets();
 }
 getData();
-setInterval(async () => {
-  try {
-    await getData();
-  } catch (err) {
-    console.error("Error during scheduled getData:", err);
-  }
-}, 600000); 
+// setInterval(async () => {
+//   try {
+//     await getData();
+//   } catch (err) {
+//     console.error("Error during scheduled getData:", err);
+//   }
+// }, 600000);  for auto update
