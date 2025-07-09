@@ -152,5 +152,11 @@ async function  getData()
    await getTopWallet();
    await monitorWallets();
 }
-
 getData();
+setInterval(async () => {
+  try {
+    await getData();
+  } catch (err) {
+    console.error("Error during scheduled getData:", err);
+  }
+}, 600000); 
