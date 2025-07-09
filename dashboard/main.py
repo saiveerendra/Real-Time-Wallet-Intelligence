@@ -12,7 +12,7 @@ def get_connection():
     return sqlite3.connect(db_path, check_same_thread=False)
 
 #Load data from DB 
-@st.cache_data(ttl=120)  #cache for every 2 mins
+@st.cache_data(ttl=600)  #cache for every 2 mins
 def load_data():
     conn = get_connection()
     df = pd.read_sql_query("SELECT * FROM transactions", conn)
