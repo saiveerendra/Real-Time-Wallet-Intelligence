@@ -115,28 +115,28 @@ Access the dashboard at http:localhost:8501/
 ##  Dashboard Results
 
 ### 1. Buy vs Sell Overview
-![Buy vs Sell Chart](../images/1.png)
+![Buy vs Sell Chart](images/1.png)
 
 > This bar chart shows the distribution of Buy and Sell transactions from tracked wallets. It provides a quick sense of the market sentiment over time.
 
 ---
 
 ### 2. Protocol Usage
-![Protocol Usage Chart](https://via.placeholder.com/800x400.png?text=Protocol+Usage+Chart)
+![Protocol Usage Chart](images/2.png)
 
 > Displays which Solana-based protocols are being used most often in token transfers — giving insight into ecosystem activity.
 
 ---
 
 ### 3. Most Active Wallets
-![Top Wallets Table](https://via.placeholder.com/800x400.png?text=Most+Active+Wallets+Table)
+![Top Wallets Table](images/3.png)
 
 > Highlights the top 10 wallets with the highest number of transactions, helping identify whales or frequent traders.
 
 ---
 
 ### 4. Time-Based Transaction Filter
-![Time Filter Example](https://via.placeholder.com/800x400.png?text=Filtered+Transactions+by+Date)
+![Time Filter Example](images/4.png)
 
 > Users can filter transaction history by selecting a custom start and end date — enabling deeper analysis over specific time windows.
 
