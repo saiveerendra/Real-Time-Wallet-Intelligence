@@ -36,12 +36,12 @@ tokenwise/
 
 - Node.js v18+
 - Python 3.8+
-- A Helius API Key (from https://www.helius.xyz/)
+- A Helius API Key (from https:www.helius.xyz/)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tokenwise.git
+git clone https:github.com/your-username/tokenwise.git
 cd tokenwise
 ```
 
@@ -92,7 +92,7 @@ cd ../dashboard
 streamlit run main.py
 ```
 
-Access the dashboard at http://localhost:8501/
+Access the dashboard at http:localhost:8501/
 
 ## 📉 Features on Dashboard
 
@@ -112,4 +112,44 @@ Access the dashboard at http://localhost:8501/
 - 🔔 Add notification system for big transactions (alerts).
 - 🧠 Add AI-powered pattern recognition (swing traders, smart money, etc).
 
+##  Dashboard Results
 
+### 1. Buy vs Sell Overview
+![Buy vs Sell Chart](https://via.placeholder.com/800x400.png?text=Buy+vs+Sell+Overview+Chart)
+
+> This bar chart shows the distribution of Buy and Sell transactions from tracked wallets. It provides a quick sense of the market sentiment over time.
+
+---
+
+### 2. Protocol Usage
+![Protocol Usage Chart](https://via.placeholder.com/800x400.png?text=Protocol+Usage+Chart)
+
+> Displays which Solana-based protocols are being used most often in token transfers — giving insight into ecosystem activity.
+
+---
+
+### 3. Most Active Wallets
+![Top Wallets Table](https://via.placeholder.com/800x400.png?text=Most+Active+Wallets+Table)
+
+> Highlights the top 10 wallets with the highest number of transactions, helping identify whales or frequent traders.
+
+---
+
+### 4. Time-Based Transaction Filter
+![Time Filter Example](https://via.placeholder.com/800x400.png?text=Filtered+Transactions+by+Date)
+
+> Users can filter transaction history by selecting a custom start and end date — enabling deeper analysis over specific time windows.
+
+ 
+##Note
+
+Use this code in monitor.js for auto update in db
+```bash
+  setInterval(async () => {
+    try {
+     await getData();
+    } catch (err) {
+     console.error("Error during scheduled getData:", err);
+   }
+ }, 600000); #for auto update
+ ```
